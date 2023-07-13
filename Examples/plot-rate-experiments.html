@@ -236,8 +236,8 @@ const thebe_selector_output = ".output, .cell_output"
     <span class="k">return</span> <span class="n">cellcycling</span>
 
 <span class="c1"># Manually read the cell-cycling steps recorded, at different currents, in the .DTA files</span>
-<span class="n">step_1</span> <span class="o">=</span> <span class="n">quickload_folder</span><span class="p">(</span><span class="s2">&quot;../utils/gamry_cellcycling/step_0,1A&quot;</span><span class="p">,</span> <span class="s2">&quot;.DTA&quot;</span><span class="p">)</span>
-<span class="n">step_2</span> <span class="o">=</span> <span class="n">quickload_folder</span><span class="p">(</span><span class="s2">&quot;../utils/gamry_cellcycling/step_0,3A&quot;</span><span class="p">,</span> <span class="s2">&quot;.DTA&quot;</span><span class="p">)</span>
+<span class="n">step_1</span> <span class="o">=</span> <span class="n">quickload_folder</span><span class="p">(</span><span class="s2">&quot;../utils/gamry_cellcycling/step_0,1A/CHARGE_DISCHARGE&quot;</span><span class="p">,</span> <span class="s2">&quot;.DTA&quot;</span><span class="p">)</span>
+<span class="n">step_2</span> <span class="o">=</span> <span class="n">quickload_folder</span><span class="p">(</span><span class="s2">&quot;../utils/gamry_cellcycling/step_0,3A/CHARGE_DISCHARGE&quot;</span><span class="p">,</span> <span class="s2">&quot;.DTA&quot;</span><span class="p">)</span>
 
 <span class="c1"># Define an experiment from the data just obtained and set the electrolyte volume</span>
 <span class="n">experiment</span> <span class="o">=</span> <span class="n">RateExperiment</span><span class="p">(</span><span class="n">current_steps</span><span class="o">=</span><span class="p">[</span><span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.3</span><span class="p">],</span> <span class="n">cellcycling_steps</span><span class="o">=</span><span class="p">[</span><span class="n">step_1</span><span class="p">,</span> <span class="n">step_2</span><span class="p">])</span>
@@ -304,8 +304,8 @@ const thebe_selector_output = ".output, .cell_output"
     <span class="k">return</span> <span class="n">cellcycling</span>
 
 <span class="c1"># Manually read the cell-cycling steps recorded, at different currents, in the .DTA files</span>
-<span class="n">step_1</span> <span class="o">=</span> <span class="n">quickload_folder</span><span class="p">(</span><span class="s2">&quot;../utils/gamry_cellcycling/step_0,1A&quot;</span><span class="p">,</span> <span class="s2">&quot;.DTA&quot;</span><span class="p">)</span>
-<span class="n">step_2</span> <span class="o">=</span> <span class="n">quickload_folder</span><span class="p">(</span><span class="s2">&quot;../utils/gamry_cellcycling/step_0,3A&quot;</span><span class="p">,</span> <span class="s2">&quot;.DTA&quot;</span><span class="p">)</span>
+<span class="n">step_1</span> <span class="o">=</span> <span class="n">quickload_folder</span><span class="p">(</span><span class="s2">&quot;../utils/gamry_cellcycling/step_0,1A/CHARGE_DISCHARGE&quot;</span><span class="p">,</span> <span class="s2">&quot;.DTA&quot;</span><span class="p">)</span>
+<span class="n">step_2</span> <span class="o">=</span> <span class="n">quickload_folder</span><span class="p">(</span><span class="s2">&quot;../utils/gamry_cellcycling/step_0,3A/CHARGE_DISCHARGE&quot;</span><span class="p">,</span> <span class="s2">&quot;.DTA&quot;</span><span class="p">)</span>
 
 <span class="c1"># Define an experiment from the data just obtained and define a second one using the Biologic battery module file</span>
 <span class="n">experiment_1</span> <span class="o">=</span> <span class="n">RateExperiment</span><span class="p">(</span><span class="n">current_steps</span><span class="o">=</span><span class="p">[</span><span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.3</span><span class="p">],</span> <span class="n">cellcycling_steps</span><span class="o">=</span><span class="p">[</span><span class="n">step_1</span><span class="p">,</span> <span class="n">step_2</span><span class="p">])</span>
